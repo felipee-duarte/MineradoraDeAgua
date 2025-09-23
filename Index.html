@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mineradora Paulista</title>
-</head>
-<body>
-    <header>
-        <img src="Imagens/fonte-removebg-preview.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Saiba Mais</a></li>
-                <li><a href="#">Nossas Marcas</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+    </style>
+  </head>
+  <body>
+    <main class="main-page">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="Imagens/fonte-removebg-preview.png"
+            alt="Mineradora Paulista Logo"
+          />
+        </div>
 
-    <main>
-        <section id="home">
-            <article>
-                <img src="Imagens/frente.png" alt="Imagem da fonte">
-                <h1>Descubra a pureza e a leveza que só a nossa água natural pode proporsionar para você e sua família</h1>
-                <p>Clique a baixo e agende sua primeira carga.</p>
-                <a href="#">agende uma carga</a>
-            </article>
-            <article>
-                <img src="Imagens/pure-removebg-preview (1).png" alt="logo da Fonte Purevalle">
-                <img src="Imagens/fonte-removebg-preview.png" alt="logo da Fonte Crystal">
-            </article>
-        </section>
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+      </header>
 
-        <section id="sobre">
-            <article>
-                <p>Sobre nós</p>
-                <h2>Mineradora Paulista</h2>
-                <img src="Imagens/fonte.png" alt="Imagem da fonte">
-                <p>Na Mineradora Paulista, levamos até você a pureza e a qualidade de uma água mineral naturalmente saudável. Extraída de fontes preservadas, nossa missão é oferecer frescor, confiança e bem-estar, sempre com responsabilidade ambiental e compromisso com a vida.</p>
-                <a href="#">Saiba Mais</a>
-            </article>
-        </section>
+      <section class="hero-section">
+        <h1 class="txt-titulo">
+          Descubra a pureza e a leveza que só a nossa água natural pode
+          proporcionar para você e sua família.
+        </h1>
+        <p class="txt">Clique abaixo e conheça mais sobre nossas marcas.</p>
+        <button class="btn-agenda">AGENDRE UMA CARGA</button>
+      </section>
 
-        <section id="diferenciais">
-            <div>
-                <img src="Imagens/carrossel.png" alt="">
-            </div>
-            <article>
-                <h2>fale com um de nossos vendedores</h2>
-                <a href="#">Saiba Mais</a>
-            </article>
-            
-        </section>
+      <section class="marcas">
+        <img
+          src="Imagens/pure-removebg-preview (1).png"
+          alt="PureValle Logo"
+          class="logo-marca"
+        />
+        <img
+          src="Imagens/Gemini_Generated_Image_gx4swagx4swagx4s-removebg-preview.png"
+          alt="Crystal Logo"
+          class="logo-marca"
+        />
+      </section>
     </main>
-</body>
+
+    <div class="menu-overlay">
+      <ul class="menu-links">
+        <li><a href="#" class="menu-item">HOME</a></li>
+        <li><a href="#" class="menu-item">SAIBA MAIS</a></li>
+        <li><a href="#" class="menu-item">NOSSAS MARCAS</a></li>
+        <li><a href="#" class="menu-item">FALE CONOSCO</a></li>
+      </ul>
+    </div>
+
+    <section class="sobre">
+      <p class="txt-section">Sobre Nós</p>
+      <h2 class="title-section">Mineradora Paulista</h2>
+      <img src="Imagens/fonte.png" alt="imagem da fonte" />
+      <p>
+        Na Mineradora Paulista, levamos até você a pureza e a qualidade de uma
+        água mineral naturalmente saudável. Extraída de fontes preservadas,
+        nossa missão é oferecer frescor, confiança e bem-estar, sempre com
+        responsabilidade ambiental e compromisso com a vida.
+      </p>
+      <a href="#">Saiba Mais</a>
+    </section>
+
+    <section class="diferenciais">
+      <h2 class="title-section">Diferenciais Da Nossa Água</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-images">
+          <img src="Imagens/carrossel01.png" alt="Imagem 1" class="active" />
+          <img src="Imagens/carrossel02.png" alt="Imagem 2" />
+          <img src="Imagens/carrossel03.png" alt="Imagem 3" />
+          <img src="Imagens/carrossel04.png" alt="Imagem 4" />
+          <img src="Imagens/carrossel05.png" alt="Imagem 5" />
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="saiba">
+        <h2 class="title-section">FALE COM UM DE NOSSOS VENDEDORES</h2>
+        <a href="#">Entre em Contato</a>
+    </section>
+  </body>
 </html>

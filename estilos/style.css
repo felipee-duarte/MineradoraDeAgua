@@ -252,47 +252,52 @@ body {
 }
 
 .carousel-container {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: grab; /* Indica que o elemento pode ser arrastado */
 }
 
 .carousel-images {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images img {
-  width: 100%;
-  height: 100%; 
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Para evitar arrastar a imagem em si em vez do carrossel */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
-
 .carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
-  background-color: #ffffff;
-  border: 1.5px solid #F2E8CF;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 1.5px solid #F2E8CF;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
 }
 
 .dot.active {
-  background-color: #00BBFF;
+    background-color: #00BBFF;
 }
 
 .saiba {
@@ -326,6 +331,7 @@ body {
     font-size: 1.25em;
     width: 200px;
     height: 70px;
+    padding: 10px;
     border: 3px solid #D62828;
     margin: 20px  auto 40px auto;
     text-decoration: none;
@@ -411,7 +417,7 @@ body {
   padding: 20px;
   border-radius: 20px;
   position: relative;
-  background-color: #00BBFF;
+  background-color:#6BA368;
   border: 1px solid #333;
   transition: ease 0.5s all;
 }
@@ -428,7 +434,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 30px;
-  color: #1C1C1C;
+  color: #ffffff;
 }
 
 .title::before {
@@ -477,8 +483,8 @@ body {
 }
 
 .form label .input {
-  background-color: #E6F4FA;
-  opacity: 50%;
+  background-color: #F2E8CF;
+  opacity: 60%;
   color: #fff;
   width: 100%;
   padding: 20px 05px 05px 10px;
@@ -492,7 +498,7 @@ body {
 }
 
 .form label .input + span {
-  color: #1C1C1C;
+  color: #ffffff;
   opacity: 50%;
   position: absolute;
   left: 10px;
@@ -528,14 +534,14 @@ body {
   color: #fff;
   font-size: 16px;
   transform: .3s ease;
-  background-color: #D62828;
+  background-color: #00bfff;
   transition: ease 0.5s all;
 }
 
 .submit:hover {
   background-color: #ff0000;
   transform: translateY(-5px);
-  box-shadow: 0 0px 20px #6BA368;
+  box-shadow: 0 0px 10px #E6F4FA;
 }
 
 @keyframes pulse {

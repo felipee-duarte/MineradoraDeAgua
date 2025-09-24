@@ -16,41 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Código para o Carrossel
-  const images = document.querySelectorAll('.carousel-images img');
-  const dots = document.querySelectorAll('.dot');
-  const totalImages = images.length;
-  let currentIndex = 0;
-  let carouselInterval;
-
-  const updateCarousel = () => {
-    images.forEach(img => img.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    images[currentIndex].classList.add('active');
-    dots[currentIndex].classList.add('active');
-
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel-images').style.transform = `translateY(${offset}%)`;
-  };
-
-  const nextImage = () => {
-    currentIndex = (currentIndex + 1) % totalImages;
+  
+// clique nas bolinhas
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
     updateCarousel();
-  };
-
-  const startAutoScroll = () => {
-    carouselInterval = setInterval(nextImage, 6000);
-  };
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      clearInterval(carouselInterval);
-      currentIndex = index;
-      updateCarousel();
-      startAutoScroll();
-    });
   });
+});
 
-  startAutoScroll();
+// inicia mostrando a primeira
+updateCarousel();
 });

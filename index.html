@@ -74,26 +74,27 @@
       <a href="saibaMais.html" target="_blank" class="btn-saiba">Saiba Mais</a>
     </section>
 
-    <section class="diferenciais">
-      <h2 class="title-section">Diferenciais Da Nossa Água</h2>
+ <section class="diferenciais">
+  <h2 class="title-section">Diferenciais Da Nossa Água</h2>
 
-      <div class="carousel-container">
-        <div class="carousel-images">
-          <img src="Imagens/carrossel01.png" alt="Imagem 1" class="active" />
-          <img src="Imagens/carrossel02.png" alt="Imagem 2" />
-          <img src="Imagens/carrossel03.png" alt="Imagem 3" />
-          <img src="Imagens/carrossel04.png" alt="Imagem 4" />
-          <img src="Imagens/carrossel05.png" alt="Imagem 5" />
-        </div>
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </section>
+  <div class="carousel-container">
+    <div class="carousel-images" id="carouselImages">
+        <img src="Imagens/carrossel01.png" alt="Imagem 1" />
+        <img src="Imagens/carrossel02.png" alt="Imagem 2" />
+        <img src="Imagens/carrossel03.png" alt="Imagem 3" />
+        <img src="Imagens/carrossel04.png" alt="Imagem 4" />
+        <img src="Imagens/carrossel05.png" alt="Imagem 5" />
+    </div>
+    <div class="carousel-dots" id="carouselDots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+</section>
+
 
     <section class="saiba">
       <img src="Imagens/img-saiba.png" alt="" />
@@ -126,7 +127,7 @@
       </p>
       <form class="form" id="form">
         <p class="title">Fale Conosco</p>
-        <p class="message">Signup now and get full access to our app.</p>
+        
           <label>
             <input class="input" type="text" placeholder="" required="" />
             <span>Nome</span>
@@ -171,5 +172,79 @@
       <br>
       <p>© 2024 Mineradora Paulista. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const imagesContainer = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel-images img');
+    const dots = document.querySelectorAll('.dot');
+    const totalImages = images.length;
+    let currentIndex = 0;
+    let startY = 0;
+    let isSwiping = false;
+
+    const updateCarousel = () => {
+        // Remove a classe 'active' de todas as imagens e bolhas
+        images.forEach(img => img.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Adiciona a classe 'active' à imagem e bolha atuais
+        images[currentIndex].classList.add('active');
+        dots[currentIndex].classList.add('active');
+
+        // Calcula e aplica a translação
+        const offset = -currentIndex * 100;
+        imagesContainer.style.transform = `translateY(${offset}%)`;
+    };
+
+    // Eventos de toque para dispositivos móveis
+    imagesContainer.addEventListener('touchstart', (e) => {
+        isSwiping = true;
+        startY = e.touches[0].clientY;
+        imagesContainer.style.transition = 'none'; // Desativa a transição durante o arrasto
+    });
+
+    imagesContainer.addEventListener('touchmove', (e) => {
+        if (!isSwiping) return;
+        const currentY = e.touches[0].clientY;
+        const diffY = currentY - startY;
+
+        const offset = -currentIndex * 100 + (diffY / imagesContainer.offsetHeight) * 100;
+        imagesContainer.style.transform = `translateY(${offset}%)`;
+    });
+
+    imagesContainer.addEventListener('touchend', (e) => {
+        if (!isSwiping) return;
+        isSwiping = false;
+        imagesContainer.style.transition = 'transform 0.5s ease-in-out'; // Reativa a transição
+
+        const endY = e.changedTouches[0].clientY;
+        const diffY = endY - startY;
+        const swipeThreshold = 50; // Mínimo de pixels para que o arrasto seja reconhecido
+
+        if (Math.abs(diffY) > swipeThreshold) {
+            if (diffY > 0) {
+                // Arrastou para baixo (próxima imagem)
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+            } else {
+                // Arrastou para cima (imagem anterior)
+                currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+            }
+        }
+        updateCarousel();
+    });
+
+    // Eventos de clique para as bolhas
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    // Inicializa o carrossel na primeira imagem
+    updateCarousel();
+});
+    </script>
   </body>
 </html>

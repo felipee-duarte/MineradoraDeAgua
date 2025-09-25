@@ -4,16 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PureValle</title>
-    <link rel="stylesheet" href="estilos/pure.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #e6f4fa;
+      }
+
+      main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px;
+      }
+
+      main section h1 {
+        text-align: center;
+        margin-top: 30px;
+        margin: 30px 50px 20px 50px;
+        font-size: 2em;
+        color: #1c1c1c;
+      }
+
+      main section h1 span {
+        color: #6ba368;
+      }
+
+      main section img {
+        width: 250px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      main section p {
+        text-align: justify;
+        margin: 20px 50px;
+        color: #1c1c1c;
+      }
+
+      .saiba {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+        text-align: center;
+      }
+
+      .saiba img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .saiba .title-section {
+        color: white;
+        margin-top: 450px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .saiba a {
+        background: #00BBFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25em;
+        width: 250px;
+        height: 70px;
+        padding: 10px;
+        margin: 20px auto 100px auto;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+        z-index: 2;
+        position: relative;
+        transition: ease 0.5s all;
+      }
+
+      .saiba a:hover {
+        background: #D62828;
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px #ff0000;
+      }
     </style>
   </head>
   <body>
     <main>
       <section>
         <h1>Conheça um pouco mais a <span>PureValle</span></h1>
-        <img src="Imagens/pure-removebg-preview (1).png" alt="logo purevalle" />
+        <img
+          src="../Imagens/pure-removebg-preview (1).png"
+          alt="logo purevalle"
+        />
         <p>
           PureValle – Confiança em cada gota Na PureValle, unimos tradição,
           qualidade e cuidado em cada embalagem de nossa água mineral. Extraída
@@ -26,15 +119,17 @@
           família, sempre com responsabilidade ambiental e respeito à vida.
         </p>
 
-        <img src="Imagens/agua-pure.png" alt="imagem de Produtos da PureValle" />
+        <img
+          src="../Imagens/agua-pure.png"
+          alt="imagem de Produtos da PureValle"
+        />
       </section>
 
-      
-     <section class="saiba">
-      <img src="Imagens/img-saiba.png" alt="" />
-      <h2 class="title-section">FALE COM UM DE NOSSOS VENDEDORES</h2>
-      <a href="#">AGENDE UMA CARGA</a>
-    </section>
+      <section class="saiba">
+        <img src="../Imagens/img-saiba.png" alt="" />
+        <h2 class="title-section">FALE COM UM DE NOSSOS VENDEDORES</h2>
+        <a href="../#form">AGENDE UMA CARGA</a>
+      </section>
     </main>
   </body>
 </html>

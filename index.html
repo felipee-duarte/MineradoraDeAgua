@@ -11,10 +11,16 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
     </style>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+       <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />    
+
   </head>
   <body>
+    <div id="topo"></div>
     <main class="main-page">
+      
       <header class="header"  id="header">
         <div class="logo">
           <img
@@ -30,6 +36,15 @@
           <div class="bars" id="bar3"></div>
         </label>
       </header>
+
+      <div class="menu-overlay">
+        <ul class="menu-links">
+          <li><a href="#header" class="menu-item">HOME</a></li>
+          <li><a href="paginas/saibaMais.html" class="menu-item">SAIBA   MAIS</a></li>
+          <li><a href="#marcas" class="menu-item">NOSSAS MARCAS</a></li>
+          <li><a href="#" class="menu-item">FALE CONOSCO</a></li>
+        </ul>
+      </div>
 
       <section class="hero-section">
         <h1 class="txt-titulo">
@@ -54,15 +69,6 @@
       </section>
     </main>
 
-    <div class="menu-overlay">
-      <ul class="menu-links">
-        <li><a href="#header" class="menu-item">HOME</a></li>
-        <li><a href="paginas/saibaMais.html" class="menu-item">SAIBA MAIS</a></li>
-        <li><a href="#marcas" class="menu-item">NOSSAS MARCAS</a></li>
-        <li><a href="#" class="menu-item">FALE CONOSCO</a></li>
-      </ul>
-    </div>
-
     <section class="sobre">
       <p class="txt-section">Sobre Nós</p>
       <h2 class="title-section">Mineradora Paulista</h2>
@@ -76,32 +82,247 @@
       <a href="saibaMais.html" target="_blank" class="btn-saiba">Saiba Mais</a>
     </section>
 
- <section class="diferenciais">
-  <h2 class="title-section">Diferenciais Da Nossa Água</h2>
+     <!-- <section class="projeto" id="projeto">
+        <div class="ancora-ajuste"></div>
+        <div class="txt-projeto">
+          <h2 style="margin-top: 0">Projetos</h2>
+        </div>
+        <div class="container swiper">
+          <div class="embalagem">
+            <div class="lista-cartao swiper-wrapper">
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Lanader-Selletcion.png"
+                    alt="Imagem projeto lander sellection"
+                  />
+                  <p class="etiqueta-cartao">Lander Sellection</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Site da lander 250 2025</h3>
+                  <p class="texto-cartao">
+                    Uma página para visualizar as cores nova Yamaha Lander 250
+                    2025, nela também inclui o manual interativo da própria.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Lander-Sellection"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Bio-links.png"
+                    alt="Imagem projeto Bio link"
+                  />
+                  <p class="etiqueta-cartao">Bio link</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">
+                    Um agregador de links para usar como um cartão de visitas
+                    online.
+                  </h3>
+                  <p class="texto-cartao">
+                    Um agregador de link com modo dark e light, para usar no seu
+                    perfil pessoal e até mesmo no profissional.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/BioLink"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/coração-animado.png"
+                    alt="Imagem projeto animacao de coracao"
+                  />
+                  <p class="etiqueta-cartao">coração animado</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Site com fundo e carta animada</h3>
+                  <p class="texto-cartao">
+                    Um site com o animação de coracao no cursor e com uma carta
+                    funcional.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/animacao-de-coracao"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/clima-tempo.png"
+                    alt="Imagem projeto clima tempo"
+                  />
+                  <p class="etiqueta-cartao">Previsão do tempo</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">
+                    Site para verificar a previsão do tempo
+                  </h3>
+                  <p class="texto-cartao">
+                    Nesse site você consegue verificar a previsão do tempo de
+                    qualquer lugar do mundo, nele inclui informções como °C,
+                    clima, umidade.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Previsao-Do-Tempo"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img
+                    src="assets/Projeto-login.png"
+                    alt="Imagem projeto lander sellection"
+                  />
+                  <p class="etiqueta-cartao">Formulário login</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Modelo formulário de login</h3>
+                  <p class="texto-cartao">
+                    Um formulário de login 100% responsivo.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/projeto-login"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img src="assets/Portifólio.png" alt="Imagem Portifólio" />
+                  <p class="etiqueta-cartao">Portifólio</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">Meu portifólio</h3>
+                  <p class="texto-cartao">
+                    O site que desenvolvi para me apresentar e apresentar meus
+                    projetos.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte/Portifolio"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cartao swiper-slide">
+                <div class="img-cartao">
+                  <img src="assets/breve.png" alt="Imagem Portifólio" />
+                  <p class="etiqueta-cartao">Em breve...</p>
+                </div>
+                <div class="conteudo-cartao">
+                  <h3 class="titulo-cartao">...</h3>
+                  <p class="texto-cartao">
+                    Aprendizado constante! <br />
+                    Em breve muitos outros projetos.
+                  </p>
+                  <div class="footer-cartao">
+                    <div class="projeto-cartao">
+                      <img src="assets/github-logo.png" alt="logo GitHub" />
+                      <div class="info-projeto">
+                        <span class="nome-perfil">Felipe Duarte</span>
+                        <span class="local-projeto">Github</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/felipee-duarte"
+                      target="_blank"
+                      class="botao-cartao"
+                      >Acesse</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <div class="carousel-container">
-    <div class="carousel-images" id="carouselImages">
-        <img src="Imagens/carrossel01.png" alt="Imagem 1" />
-        <img src="Imagens/carrossel02.png" alt="Imagem 2" />
-        <img src="Imagens/carrossel03.png" alt="Imagem 3" />
-        <img src="Imagens/carrossel04.png" alt="Imagem 4" />
-        <img src="Imagens/carrossel05.png" alt="Imagem 5" />
-    </div>
-    <div class="carousel-dots" id="carouselDots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</div>
-</section>
+           If we need paginatio
+            <div class="swiper-pagination"></div>
+
+             If we need navigation buttons 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section> -->
 
 
     <section class="saiba">
       <img src="Imagens/img-saiba.png" alt="" />
       <h2 class="title-section">FALE COM UM DE NOSSOS VENDEDORES</h2>
-      <a href="#">Entre em Contato</a>
+      <a href="#form">Entre em Contato</a>
     </section>
 
     <section class="sobre-marcas" id="marcas">
@@ -111,23 +332,23 @@
         alt="Marca PureValle"
         class="logo-marca"
       />
-      <a href="pure.html" class="btn-saiba">Saiba Mais</a>
+      <a href="paginas/pure.html" target="_blank" class="btn-saiba">Saiba Mais</a>
       <img
         src="Imagens/Gemini_Generated_Image_gx4swagx4swagx4s-removebg-preview.png"
         alt="Marca Crystal"
         class="logo-marca"
       />
-      <a href="#" class="btn-saiba">Saiba Mais</a>
+      <a href="paginas/crystal.html" target="_blank" class="btn-saiba">Saiba Mais</a>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="form">
       <h2 class="title-section">Envie Uma Mensagem</h2>
       <p class="txt-section">
         Preencha o formulário de contato e um de nossos vendedores entrará em
         contato mais breve possível com você! Caso prefira você pode nos chamar
         também no WhatsApp para contar mais sobre seu caso.
       </p>
-      <form class="form" id="form">
+      <form class="form" >
         <p class="title">Fale Conosco</p>
         
           <label>
@@ -175,78 +396,14 @@
       <p>© 2024 Mineradora Paulista. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-    const imagesContainer = document.querySelector('.carousel-images');
-    const images = document.querySelectorAll('.carousel-images img');
-    const dots = document.querySelectorAll('.dot');
-    const totalImages = images.length;
-    let currentIndex = 0;
-    let startY = 0;
-    let isSwiping = false;
+    <button class="button" id="scrollTop">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
 
-    const updateCarousel = () => {
-        // Remove a classe 'active' de todas as imagens e bolhas
-        images.forEach(img => img.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-
-        // Adiciona a classe 'active' à imagem e bolha atuais
-        images[currentIndex].classList.add('active');
-        dots[currentIndex].classList.add('active');
-
-        // Calcula e aplica a translação
-        const offset = -currentIndex * 100;
-        imagesContainer.style.transform = `translateY(${offset}%)`;
-    };
-
-    // Eventos de toque para dispositivos móveis
-    imagesContainer.addEventListener('touchstart', (e) => {
-        isSwiping = true;
-        startY = e.touches[0].clientY;
-        imagesContainer.style.transition = 'none'; // Desativa a transição durante o arrasto
-    });
-
-    imagesContainer.addEventListener('touchmove', (e) => {
-        if (!isSwiping) return;
-        const currentY = e.touches[0].clientY;
-        const diffY = currentY - startY;
-
-        const offset = -currentIndex * 100 + (diffY / imagesContainer.offsetHeight) * 100;
-        imagesContainer.style.transform = `translateY(${offset}%)`;
-    });
-
-    imagesContainer.addEventListener('touchend', (e) => {
-        if (!isSwiping) return;
-        isSwiping = false;
-        imagesContainer.style.transition = 'transform 0.5s ease-in-out'; // Reativa a transição
-
-        const endY = e.changedTouches[0].clientY;
-        const diffY = endY - startY;
-        const swipeThreshold = 50; // Mínimo de pixels para que o arrasto seja reconhecido
-
-        if (Math.abs(diffY) > swipeThreshold) {
-            if (diffY > 0) {
-                // Arrastou para baixo (próxima imagem)
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
-            } else {
-                // Arrastou para cima (imagem anterior)
-                currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
-            }
-        }
-        updateCarousel();
-    });
-
-    // Eventos de clique para as bolhas
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateCarousel();
-        });
-    });
-
-    // Inicializa o carrossel na primeira imagem
-    updateCarousel();
-});
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

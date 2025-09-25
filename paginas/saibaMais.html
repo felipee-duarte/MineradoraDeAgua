@@ -1,25 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/saibaMais.css">
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #E6F4FA;
+      }
+
+      main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 20px;
+      }
+
+      section h2 {
+        margin-top: 30px;
+        font-size: 1.5em;
+        color: #6ba368;
+      }
+
+      section .fonte {
+        width: 350px;
+        border-radius: 0 20px 0 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      section p {
+        text-align: justify;
+        margin: 0 30px;
+        color: #1c1c1c;
+      }
+
+      section img {
+        width: 250px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      section .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px 10px;
+        background: #00BBFF;
+        border-radius: 15px;
+      }
+
+      section .txt-card {
+        color: #1c1c1c;
+        text-align: junstify;
+        margin-top: 15px;
+      }
+
+      section a {
+        width: 150px;
+        padding: 10px 15px;
+        text-align: center;
+        background: #00BBFF;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      section a:hover {
+        background: #D62828;
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px #ff0000;
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <section>
-            <h2>Conheça Mais Nossa Empressa</h2>
-            <img src="Imagens/lado-fonte.png" class="fonte" alt="Imagem de uma fonte">
-            <p>Na Mineradora Paulista, acreditamos que a água é sinônimo de vida e bem-estar. Por isso, trabalhamos com dedicação para levar até você a pureza e a qualidade de uma água mineral naturalmente saudável. Nossa água é extraída de fontes cuidadosamente preservadas, livres de poluição, o que garante um frescor único e propriedades minerais que contribuem para a saúde no dia a dia.</p>
-            <img src="Imagens/frente 2.png" alt="">
-            <div class="card">
-                <p class="txt-card">Além de prezarmos pela responsabilidade ambiental em todo o processo de captação e distribuição, oferecemos soluções práticas para famílias, empresas e estabelecimentos comerciais. Contamos com tonéis de diferentes capacidades, ideais para atender desde o consumo doméstico até grandes demandas, sempre com a mesma qualidade e confiança que marcam a nossa marca.</p>
-            </div>
-            <p>Cada tonel é armazenado e transportado seguindo rigorosos padrões de higiene e segurança, para que você receba apenas o melhor da nossa fonte, direto para sua casa ou negócio.</p>
-            <img src="Imagens/tonel-agua 1.png" class="fonte" alt="imagem de um tonel de água">
-            <a href="index.html" target="_blank">Voltar</a>
-        </section>
+      <section>
+        <h2>Conheça Mais Nossa Empressa</h2>
+        <img
+          src="../Imagens/lado-fonte.png"
+          class="fonte"
+          alt="Imagem de uma fonte"
+        />
+        <p>
+          Na Mineradora Paulista, acreditamos que a água é sinônimo de vida e
+          bem-estar. Por isso, trabalhamos com dedicação para levar até você a
+          pureza e a qualidade de uma água mineral naturalmente saudável. Nossa
+          água é extraída de fontes cuidadosamente preservadas, livres de
+          poluição, o que garante um frescor único e propriedades minerais que
+          contribuem para a saúde no dia a dia.
+        </p>
+        <img src="../Imagens/frente 2.png" alt="" />
+        <div class="card">
+          <p class="txt-card">
+            Além de prezarmos pela responsabilidade ambiental em todo o processo
+            de captação e distribuição, oferecemos soluções práticas para
+            famílias, empresas e estabelecimentos comerciais. Contamos com
+            tonéis de diferentes capacidades, ideais para atender desde o
+            consumo doméstico até grandes demandas, sempre com a mesma qualidade
+            e confiança que marcam a nossa marca.
+          </p>
+        </div>
+        <p>
+          Cada tonel é armazenado e transportado seguindo rigorosos padrões de
+          higiene e segurança, para que você receba apenas o melhor da nossa
+          fonte, direto para sua casa ou negócio.
+        </p>
+        <img
+          src="../Imagens/tonel-agua 1.png"
+          class="fonte"
+          alt="imagem de um tonel de água"
+        />
+        <a href="../index.html" target="_blank">Voltar</a>
+      </section>
     </main>
-</body>
+  </body>
 </html>

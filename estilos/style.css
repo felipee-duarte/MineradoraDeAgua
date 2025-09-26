@@ -67,7 +67,7 @@ div.txt-animado {
 
 .txt-animado span::before {
   content: "Vanádio";
-  color: var(--text-highlight);
+  color: #00BBFF;
   animation: words 20s infinite;
 }
 
@@ -76,7 +76,7 @@ div.txt-animado {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: var(--bg-body);
+  background-color: #272727;
   border-left: 3px solid #D62828;
   right: -8px;
   animation: cursor 0.7s infinite, typing 20s steps(12) infinite;
@@ -91,23 +91,23 @@ div.txt-animado {
 @keyframes words {
   0%,
   20% {
-    content: "vanádio";
+    content: "Vanádio";
   }
   21%,
   40% {
-    content: "Silício";
+    content: "Minerais";
   }
   41%,
   60% {
-    content: "vanádio";
+    content: "Vanádio";
   }
   61%,
   80% {
-    content: "Silício";
+    content: "Minerais";
   }
   81%,
   100% {
-    content: "vanádio";
+    content: "Vanádio";
   }
 }
 
@@ -133,7 +133,7 @@ div.txt-animado {
   65%,
   80%,
   85% {
-    width: calc(100% + 8px);
+    width: calc(100% + 5px);
   }
 }
 
@@ -290,6 +290,19 @@ div.txt-animado {
     color: #1C1C1C;
 }
 
+#fade-title {
+  opacity: 0;                /* começa invisível */
+  transform: translateX(-100px); /* começa um pouco deslocada */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fade-title {
+  to {
+    opacity: 1;               /* aparece */
+    transform: translateX(0); /* volta para o lugar */
+  }
+}
+
 .sobre .title-section {
     font-size: 1.5em;
     font-weight: bold;
@@ -302,10 +315,10 @@ div.txt-animado {
     margin-bottom: 30px
 }
 
-.fade-in {
+#fade-in {
   opacity: 0;                /* começa invisível */
-  transform: translateY(20px); /* começa um pouco deslocada */
-  animation: fadeIn 1.5s ease-in-out forwards;
+  transform: scale(0.2); /* começa um pouco deslocada */
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -342,18 +355,6 @@ div.txt-animado {
     box-shadow: 0 0 15px #c80101;
 }
 
-.diferenciais {
-    display: flex;
-    flex-direction: column;
-    margin: 40px 20px;
-}
-
-.diferenciais .title-section {
-  margin: 10px 50px;
-  text-align: center;
-}
-
-
 .saiba {
     display: flex;
     justify-content: center;
@@ -387,7 +388,7 @@ div.txt-animado {
     width: 200px;
     height: 70px;
     padding: 10px;
-    margin: 20px  auto 40px auto;
+    margin: 15px  auto 60px auto;
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -415,11 +416,50 @@ div.txt-animado {
     margin-top: 30px;
 }
 
+#fade-marca {
+  opacity: 0;                /* começa invisível */
+  transform: translateX(-200px); /* começa um pouco deslocada */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fade-marca {
+  to {
+    opacity: 1;               /* aparece */
+    transform: translateX(0); /* volta para o lugar */
+  }
+}
+
 .sobre-marcas .logo-marca {
     width: 150px;
     height: auto;
     margin-top: 40px;
     filter: drop-shadow(0 0 20px #0000005c);
+}
+
+#fade-pure {
+  opacity: 0;                /* começa invisível */
+  transform: scale(0.5); /* começa um pouco deslocada */
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fade-pure {
+  to {
+    opacity: 3;               /* aparece */
+    transform: translateY(0); /* volta para o lugar */
+  }
+}
+
+#fade-crystal {
+  opacity: 0;                /* começa invisível */
+  transform: scale(0.5); /* começa um pouco deslocada */
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fade-crystal {
+  to {
+    opacity: 3;               /* aparece */
+    transform: translateY(0); /* volta para o lugar */
+  }
 }
 
 .sobre-marcas .btn-saiba {
@@ -480,7 +520,7 @@ div.txt-animado {
 }
 
 .form:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
   box-shadow: 0 0 20px #c80101;
 }
 .title {

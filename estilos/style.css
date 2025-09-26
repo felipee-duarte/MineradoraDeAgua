@@ -48,7 +48,7 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 50px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -57,7 +57,7 @@ div.txt-animado {
   font-size: 1.25em;
   font-weight: bold;
   margin-right: 30px;
-   text-align: left;
+   text-align: center;
 }
 
 .txt-animado span {
@@ -140,7 +140,7 @@ div.txt-animado {
 .txt {
     font-size: 1em;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .btn-agenda {
@@ -280,6 +280,31 @@ div.txt-animado {
     transition-duration: .4s;
 }
 
+/* Estado inicial (garantindo que não some se JS falhar) */
+.fade-title {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-img {
+  opacity: 0;
+  transform: scale(0.2);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* Quando aparece */
+.fade-title.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-img.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 .sobre {
     display: flex;
     flex-direction: column;
@@ -288,19 +313,6 @@ div.txt-animado {
 
 .sobre .txt-section {
     color: #1C1C1C;
-}
-
-#fade-title {
-  opacity: 0;                /* começa invisível */
-  transform: translateX(-100px); /* começa um pouco deslocada */
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fade-title {
-  to {
-    opacity: 1;               /* aparece */
-    transform: translateX(0); /* volta para o lugar */
-  }
 }
 
 .sobre .title-section {
@@ -314,20 +326,6 @@ div.txt-animado {
     border-radius: 0 20px;
     margin-bottom: 30px
 }
-
-#fade-in {
-  opacity: 0;                /* começa invisível */
-  transform: scale(0.2); /* começa um pouco deslocada */
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;               /* aparece */
-    transform: translateY(0); /* volta para o lugar */
-  }
-}
-
 
 .sobre p {
     text-align: justify;
@@ -416,50 +414,11 @@ div.txt-animado {
     margin-top: 30px;
 }
 
-#fade-marca {
-  opacity: 0;                /* começa invisível */
-  transform: translateX(-200px); /* começa um pouco deslocada */
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fade-marca {
-  to {
-    opacity: 1;               /* aparece */
-    transform: translateX(0); /* volta para o lugar */
-  }
-}
-
 .sobre-marcas .logo-marca {
     width: 150px;
     height: auto;
     margin-top: 40px;
     filter: drop-shadow(0 0 20px #0000005c);
-}
-
-#fade-pure {
-  opacity: 0;                /* começa invisível */
-  transform: scale(0.5); /* começa um pouco deslocada */
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fade-pure {
-  to {
-    opacity: 3;               /* aparece */
-    transform: translateY(0); /* volta para o lugar */
-  }
-}
-
-#fade-crystal {
-  opacity: 0;                /* começa invisível */
-  transform: scale(0.5); /* começa um pouco deslocada */
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fade-crystal {
-  to {
-    opacity: 3;               /* aparece */
-    transform: translateY(0); /* volta para o lugar */
-  }
 }
 
 .sobre-marcas .btn-saiba {

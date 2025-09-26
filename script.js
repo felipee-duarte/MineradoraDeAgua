@@ -44,3 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const botaoTopo = document.getElementById("whatsappBtn");
+
+  // Clique no botão -> rola suavemente até o topo
+  botaoTopo.addEventListener("click", () => {
+    document.getElementById("topo").scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Mostra/esconde o botão conforme o scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      botaoTopo.style.display = "flex";
+    } else {
+      botaoTopo.style.display = "none";
+    }
+  });
+});
+
+

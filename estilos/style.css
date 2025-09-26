@@ -45,26 +45,113 @@ body {
 }
 
 .txt-titulo {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
+}
+
+div.txt-animado {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-right: 30px;
+   text-align: left;
+}
+
+.txt-animado span {
+  position: relative;
+  color: #00BBFF;
+}
+
+.txt-animado span::before {
+  content: "Vanádio";
+  color: var(--text-highlight);
+  animation: words 20s infinite;
+}
+
+.txt-animado span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: var(--bg-body);
+  border-left: 3px solid #D62828;
+  right: -8px;
+  animation: cursor 0.7s infinite, typing 20s steps(12) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #c80101;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "vanádio";
+  }
+  21%,
+  40% {
+    content: "Silício";
+  }
+  41%,
+  60% {
+    content: "vanádio";
+  }
+  61%,
+  80% {
+    content: "Silício";
+  }
+  81%,
+  100% {
+    content: "vanádio";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
 }
 
 .txt {
     font-size: 1em;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .btn-agenda {
     width: 250px;
     height: 60px;
+    text-decoration: none;
     background-color: #D62828;
     color: #fff;
     border: none;
     border-radius: 10px;
-    font-size: 1.25em;
+    font-size: 1em;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
@@ -73,7 +160,7 @@ body {
 
 .btn-agenda:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px #6BA368;
+    box-shadow: 0 0 15px #c80101;
 }
 
 .marcas {
@@ -212,8 +299,22 @@ body {
 
 .sobre img {
     border-radius: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
+
+.fade-in {
+  opacity: 0;                /* começa invisível */
+  transform: translateY(20px); /* começa um pouco deslocada */
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;               /* aparece */
+    transform: translateY(0); /* volta para o lugar */
+  }
+}
+
 
 .sobre p {
     text-align: justify;
@@ -236,8 +337,9 @@ body {
 }
 
 .sobre .btn-saiba:hover {
+    background: #D62828;
     transform: translateY(-5px);
-    box-shadow: 0 0 15px #6BA368;
+    box-shadow: 0 0 15px #c80101;
 }
 
 .diferenciais {
@@ -251,200 +353,6 @@ body {
   text-align: center;
 }
 
-/*CARROSSEL*/
-.projeto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.txt-projeto h2 {
-  display: flex;
-  font-size: 2.5em;
-  margin-bottom: 1em;
-  color: #1C1C1C;
-  text-align: center;
-  padding: 5px;
-  text-shadow: 2px 2px 5px #00BBFF;
-}
-
-.embalagem {
-  max-width: 80vw;
-  padding: 20px 10px;
-  margin: 0 10px 25px;
-  overflow: hidden;
-}
-
-.embalagem .cartao {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background: #E6F4FA;
-  border-radius: 20px;
-  box-shadow: 0 10px 10px #00BBFF;
-  transition: transform 0.3s ease;
-}
-
-.embalagem .cartao:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px #00BBFF;
-}
-
-.cartao .img-cartao {
-  position: relative;
-}
-
-.cartao .img-cartao img {
-  width: 100%;
-  border-radius: 22px;
-  padding: 10px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.cartao .img-cartao .etiqueta-cartao {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.75em;
-  color: #1C1C1C;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  background: var(--tag-bg);
-}
-
-.cartao .conteudo-cartao {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 25px 25px;
-}
-
-.cartao .conteudo-cartao .titulo-cartao {
-  color: var(--card-title);
-  font-size: 1.25em;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 15px;
-}
-
-.cartao .conteudo-cartao .texto-cartao {
-  color: var(--text-default);
-  font-size: 0.95em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.cartao .conteudo-cartao .footer-cartao {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 15px;
-  margin-top: auto;
-  border-top: 1px solid var(--footer-border);
-}
-
-.cartao .footer-cartao .projeto-cartao {
-  display: flex;
-  align-items: center;
-}
-
-.cartao .projeto-cartao img {
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--tag-bg);
-  box-shadow: 0 2px 5px var(--hover);
-}
-
-.cartao .projeto-cartao .info-projeto {
-  display: flex;
-  flex-direction: column;
-}
-
-.cartao .projeto-cartao .nome-perfil {
-  font-size: 0.85em;
-  font-weight: 600;
-  color: var(--card-title);
-}
-
-.cartao .projeto-cartao .local-projeto {
-  font-size: 0.8em;
-  color: var(--card-title);
-}
-
-.cartao .footer-cartao .botao-cartao {
-  color: var(--text-default);
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 0.9em;
-  font-weight: 600;
-  text-decoration: none;
-  background: var(--button-project);
-  box-shadow: 0 8px 15px var(--card-hover-bg);
-  transition: all 0.3s ease;
-}
-
-.cartao .footer-cartao .botao-cartao:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px var(--card-hover-bg);
-}
-
-.embalagem .swiper-pagination-bullet {
-  height: 15px;
-  width: 15px;
-  overflow: hidden;
-  opacity: 1;
-  background: var(--swiperbullet);
-}
-
-.embalagem .swiper-pagination-bullet-active::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--swiperbutton);
-  transform: scaleX(0);
-  transform-origin: left center;
-  animation: autoplay-loading 5s linear forwards;
-}
-
-.container:hover .embalagem .swiper-pagination-bullet-active::before {
-  animation-play-state: paused;
-}
-
-@keyframes autoplay-loading {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.embalagem :where(.swiper-button-prev, .swiper-button-next) {
-  color: var(--swiperbutton);
-  margin-top: -35px;
-  transition: all 0.3s ease;
-}
-
-.embalagem .swiper-button-prev {
-  display: none;
-}
-
-.embalagem .swiper-button-next {
-  display: none;
-}
-
-.embalagem :where(.swiper-button-prev, .swiper-button-next):hover {
-  color: var(--swiperbutton);
-}
 
 .saiba {
     display: flex;
@@ -465,7 +373,7 @@ body {
 
 .saiba .title-section {
     color: white;
-    margin-top: 350px;
+    margin-top: 400px;
     z-index: 2;
     position: relative;
 }
@@ -531,8 +439,9 @@ body {
 }
 
 .sobre-marcas .btn-saiba:hover {
+    background: #D62828;
     transform: translateY(-5px);
-    box-shadow: 0 0 15px #6BA368;
+    box-shadow: 0 0 20px #c80101;
 }
 
 .contato {
@@ -556,6 +465,8 @@ body {
     max-width: 600px;
 }  
 
+/*FORMULÁRIO*/
+
 .form {
   display: flex;
   flex-direction: column;
@@ -570,7 +481,7 @@ body {
 
 .form:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #6BA368;
+  box-shadow: 0 0 20px #c80101;
 }
 .title {
   font-size: 28px;
@@ -804,4 +715,35 @@ align-self: center;
   
   transition-duration: 0.3s;
 }
+
+/* Botão WhatsApp - herdando estilo do botão */
+.svgWhatsapp {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  display: block;
+}
+
+
+.button.whatsapp:hover .svgWhatsapp {
+  width: 28px;
+  height: 28px;
+  transform: translateY(-200%);
+}
+
+.button.whatsapp {
+  background-color: #25d366;
+  box-shadow: 0px 0px 0px 4px #1ebd5a;
+  right: 20px;
+  left: auto;
+}
+
+.button.whatsapp:hover {
+  background-color: #1ebd5a;
+}
+
+.button.whatsapp::before {
+  content: "WhatsApp";
+}
+
 

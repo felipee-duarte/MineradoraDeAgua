@@ -9,8 +9,10 @@
 body {
     margin: 0;
     position: relative;
+      min-height: 100vh;
 }
 
+/*HOME*/
 .main-page {
     background: black;
     background-image: url('../Imagens/frente\ 1.png');
@@ -176,6 +178,7 @@ div.txt-animado {
     filter: drop-shadow(0 0 20px #0000005c);
 }
 
+/*MENU*/
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -280,7 +283,7 @@ div.txt-animado {
     transition-duration: .4s;
 }
 
-/* Estado inicial (garantindo que não some se JS falhar) */
+/*ANIMAÇÕES*/
 .fade-title {
   opacity: 0;
   transform: translateX(-100px);
@@ -293,7 +296,6 @@ div.txt-animado {
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
-/* Quando aparece */
 .fade-title.show {
   opacity: 1;
   transform: translateX(0);
@@ -304,7 +306,7 @@ div.txt-animado {
   transform: scale(1);
 }
 
-
+/*SOBRE*/
 .sobre {
     display: flex;
     flex-direction: column;
@@ -353,6 +355,96 @@ div.txt-animado {
     box-shadow: 0 0 15px #c80101;
 }
 
+/*DETAQUES*/
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+
+}
+
+.embalagem {
+  max-width: 100vw;
+  padding: 20px 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.embalagem .cartao {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.cartao .img-cartao {
+  position: relative;
+}
+
+.cartao .img-cartao img {
+  width: 100%;
+  padding: 10px;
+}
+
+.embalagem .swiper-pagination-bullet {
+  position: relative; /* necessário para o ::before */
+  height: 15px;
+  width: 15px;
+  border-radius: 5% 40% 50% 40%; /* gota mais natural */
+  overflow: hidden;
+  opacity: 1;
+  background: #E6F4FA;
+}
+
+.embalagem .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #00BBFF;
+  border-radius: inherit; /* segue o formato da gota */
+  
+  transform: scaleY(0);            /* começa vazio */
+  transform-origin: top center;    /* enche de cima para baixo */
+  
+  animation: preencher-gota 5s linear forwards;
+}
+
+.container:hover .embalagem .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+@keyframes preencher-gota {
+  100% {
+    transform: scaleY(1); /* cheio */
+  }
+}
+
+
+.embalagem :where(.swiper-button-prev, .swiper-button-next) {
+  color: #00BBFF;
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+
+.embalagem .swiper-button-prev {
+  display: none;
+}
+
+.embalagem .swiper-button-next {
+  display: none;
+}
+
+.embalagem :where(.swiper-button-prev, .swiper-button-next):hover {
+  color: #00BBFF;
+}
+
+ /*SAIBA*/
 .saiba {
     display: flex;
     justify-content: center;
@@ -402,6 +494,7 @@ div.txt-animado {
   box-shadow: 0 0 15px #ff0000;
 }
 
+/*MARCAS*/
 .sobre-marcas {
     display: flex;
     justify-content: center;
@@ -443,6 +536,7 @@ div.txt-animado {
     box-shadow: 0 0 20px #c80101;
 }
 
+ /*CONTATO*/
 .contato {
     display: flex;
     flex-direction: column;
@@ -465,7 +559,6 @@ div.txt-animado {
 }  
 
 /*FORMULÁRIO*/
-
 .form {
   display: flex;
   flex-direction: column;
@@ -482,6 +575,7 @@ div.txt-animado {
   transform: translateY(-15px);
   box-shadow: 0 0 20px #c80101;
 }
+
 .title {
   font-size: 28px;
   font-weight: 600;
@@ -515,7 +609,6 @@ div.txt-animado {
   background-color: #D62828;
 }
 
- 
 .signin {
   font-size: 14.5px;
   color: #1C1C1C;
@@ -532,7 +625,6 @@ div.txt-animado {
 .signin a {
   color: #00bfff;
 }
-
 
 .form label {
   position: relative;
@@ -612,10 +704,12 @@ div.txt-animado {
   }
 }
 
+ /*IFRAME*/
 .contato iframe {
   margin: 40px 0;
 }
 
+/*FOOTER*/
 footer {
  display: flex;
     flex-direction: column;
@@ -653,8 +747,7 @@ iframe {
 align-self: center;
 }
 
-/* BOTÃO ANCORA */
-
+/* BOTÕES ANCORAS */
 .button {
   width: 50px;
   height: 50px;
@@ -715,14 +808,12 @@ align-self: center;
   transition-duration: 0.3s;
 }
 
-/* Botão WhatsApp - herdando estilo do botão */
 .svgWhatsapp {
   width: 30px;
   height: 30px;
   fill: white;
   display: block;
 }
-
 
 .button.whatsapp:hover .svgWhatsapp {
   width: 28px;

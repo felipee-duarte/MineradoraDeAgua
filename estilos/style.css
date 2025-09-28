@@ -393,7 +393,7 @@ div.txt-animado {
   position: relative; /* necessário para o ::before */
   height: 15px;
   width: 15px;
-  border-radius: 5% 40% 50% 40%; /* gota mais natural */
+  border-radius: 5% 60% 50% 60%; /* gota mais natural */
   overflow: hidden;
   opacity: 1;
   background: #E6F4FA;

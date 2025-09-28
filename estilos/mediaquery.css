@@ -1,0 +1,169 @@
+/*Typical Device Breakpoints
+
+    Pequenas telas: até 600px
+    celular: de 600px até 768
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Telas grandes: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /*HOME*/
+    .logo img {
+        width: 250px;
+    }
+
+    .txt-titulo {
+        font-size: 2.25em;
+    }
+
+    div.txt-animado {
+        font-size: 2em;
+    }
+
+    .txt {
+        font-size: 1.25em;
+    }
+
+    .btn-agenda {
+        width: 300px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .logo-marca {
+        height: 100px;
+    }
+
+    /*MENU*/
+    .menu-item {
+        font-size: 2.25em;
+    }
+
+    /*SOBRE*/
+    .sobre .txt-section {
+        font-size: 1.5em;
+    }
+
+    .sobre .title-section {
+        font-size: 2.25em;
+    }
+
+    .sobre .btn-saiba {
+        width: 200px;
+        height: 60px;
+        font-size: 1.25em;
+    }
+
+    /*DETAQUES*/
+    .projeto .title-section {
+        font-size: 1.5em;
+    }
+    .embalagem .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*SAIBA*/
+   .saiba .title-section {
+    font-size: 2.25em;
+   }
+
+   .saiba a {
+    width: 250px;
+    height: 80px;
+    font-size: 1.5em;
+   }
+
+   /*MARCAS*/
+   .sobre-marcas .title-section {
+    font-size: 2.25em;
+   }
+
+   .sobre-marcas .logo-marca {
+    width: 200px;
+   }
+
+   .sobre-marcas .btn-saiba {
+    width: 200px;
+    height: 60px;
+    font-size: 1.25em;
+   }
+
+    /*CONTATO*/
+    .contato {
+        align-items: center;
+    }
+    .contato .title-section {
+        font-size: 2.25em;
+    }
+
+    .contato .txt-section {
+        font-size: 1.25em;
+    }
+
+    /*FORMULÁRIO*/
+    .form {
+       width: 70vw;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .form label .input + span {
+        font-size: 1.25em;
+    }
+
+    .submit {
+        font-size: 1.25em;
+    }
+
+     /*IFRAME*/
+    iframe {
+        width: 450px;
+        height: 450px;
+    }
+
+    /*FOOTER*/
+    footer img {
+        width: 250px;
+    }
+
+    footer .title-section {
+        font-size: 2em;
+    }
+
+    footer .linha-decorativa {
+        width: 90vw;
+    }
+
+    footer p {
+        font-size: 1.5em
+    }
+
+    /* BOTÕES ANCORAS */ 
+    .button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .svgIcon {
+        width: 20px;
+    }
+
+    .svgWhatsapp {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

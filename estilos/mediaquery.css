@@ -9,161 +9,503 @@
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /*HOME*/
-    .logo img {
-        width: 250px;
-    }
-
-    .txt-titulo {
-        font-size: 2.25em;
-    }
-
-    div.txt-animado {
-        font-size: 2em;
-    }
-
-    .txt {
-        font-size: 1.25em;
-    }
-
-    .btn-agenda {
-        width: 300px;
-        height: 80px;
-        font-size: 1.5em;
-    }
-
-    .logo-marca {
-        height: 100px;
-    }
-
-    /*MENU*/
-    .menu-item {
-        font-size: 2.25em;
-    }
-
-    /*SOBRE*/
-    .sobre .txt-section {
-        font-size: 1.5em;
-    }
-
-    .sobre .title-section {
-        font-size: 2.25em;
-    }
-
-    .sobre .btn-saiba {
-        width: 200px;
-        height: 60px;
-        font-size: 1.25em;
-    }
-
-    /*DETAQUES*/
-    .projeto .title-section {
-        font-size: 1.5em;
-    }
-    .embalagem .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-    }
-
-    /*SAIBA*/
-   .saiba .title-section {
-    font-size: 2.25em;
-   }
-
-   .saiba a {
+  /*HOME*/
+  .logo img {
     width: 250px;
+  }
+
+  .txt-titulo {
+    font-size: 2.25em;
+  }
+
+  div.txt-animado {
+    font-size: 2em;
+  }
+
+  .txt {
+    font-size: 1.25em;
+  }
+
+  .btn-agenda {
+    width: 300px;
     height: 80px;
     font-size: 1.5em;
-   }
+  }
 
-   /*MARCAS*/
-   .sobre-marcas .title-section {
+  .logo-marca {
+    height: 100px;
+  }
+
+  /*MENU*/
+  .menu-item {
     font-size: 2.25em;
-   }
+  }
 
-   .sobre-marcas .logo-marca {
-    width: 200px;
-   }
+  /*SOBRE*/
+  .sobre .txt-section {
+    font-size: 1.5em;
+  }
 
-   .sobre-marcas .btn-saiba {
+  .sobre .title-section {
+    font-size: 2.25em;
+  }
+
+  .sobre .btn-saiba {
     width: 200px;
     height: 60px;
     font-size: 1.25em;
-   }
+  }
 
-    /*CONTATO*/
-    .contato {
-        align-items: center;
-    }
-    .contato .title-section {
-        font-size: 2.25em;
-    }
+  /*DETAQUES*/
+  .projeto .title-section {
+    font-size: 1.5em;
+  }
+  .embalagem .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
 
-    .contato .txt-section {
-        font-size: 1.25em;
-    }
+  /*SAIBA*/
+  .saiba .title-section {
+    font-size: 2.25em;
+  }
 
-    /*FORMULÁRIO*/
-    .form {
-       width: 70vw;
-    }
+  .saiba a {
+    width: 250px;
+    height: 80px;
+    font-size: 1.5em;
+  }
 
-    .title {
-        font-size: 2em;
-    }
+  /*MARCAS*/
+  .sobre-marcas .title-section {
+    font-size: 2.25em;
+  }
 
-    .form label .input + span {
-        font-size: 1.25em;
-    }
+  .sobre-marcas .logo-marca {
+    width: 200px;
+  }
 
-    .submit {
-        font-size: 1.25em;
-    }
+  .sobre-marcas .btn-saiba {
+    width: 200px;
+    height: 60px;
+    font-size: 1.25em;
+  }
 
-     /*IFRAME*/
-    iframe {
-        width: 450px;
-        height: 450px;
-    }
+  /*CONTATO*/
+  .contato {
+    align-items: center;
+  }
+  .contato .title-section {
+    font-size: 2.25em;
+  }
 
-    /*FOOTER*/
-    footer img {
-        width: 250px;
-    }
+  .contato .txt-section {
+    font-size: 1.25em;
+  }
 
-    footer .title-section {
-        font-size: 2em;
-    }
+  /*FORMULÁRIO*/
+  .form {
+    width: 70vw;
+  }
 
-    footer .linha-decorativa {
-        width: 90vw;
-    }
+  .title {
+    font-size: 2em;
+  }
 
-    footer p {
-        font-size: 1.5em
-    }
+  .form label .input + span {
+    font-size: 1.25em;
+  }
 
-    /* BOTÕES ANCORAS */ 
-    .button {
-        width: 70px;
-        height: 70px;
-    }
+  .submit {
+    font-size: 1.25em;
+  }
 
-    .svgIcon {
-        width: 20px;
-    }
+  /*IFRAME*/
+  iframe {
+    width: 450px;
+    height: 450px;
+  }
 
-    .svgWhatsapp {
-        width: 70px;
-        height: 70px;
-    }
+  /*FOOTER*/
+  footer img {
+    width: 250px;
+  }
 
+  footer .title-section {
+    font-size: 2em;
+  }
+
+  footer .linha-decorativa {
+    width: 90vw;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+
+  /* BOTÕES ANCORAS */
+  .button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .svgIcon {
+    width: 20px;
+  }
+
+  .svgWhatsapp {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  /*HOME*/
+  .logo img {
+    width: 250px;
+  }
 
+  .txt-titulo {
+    font-size: 2.25em;
+  }
+
+  div.txt-animado {
+    font-size: 2em;
+  }
+
+  .txt {
+    font-size: 1.25em;
+  }
+
+  .btn-agenda {
+    width: 300px;
+    height: 80px;
+    font-size: 1.5em;
+  }
+
+  .logo-marca {
+    height: 100px;
+  }
+
+  /*MENU*/
+  .menu-item {
+    font-size: 2.25em;
+  }
+
+  /*SOBRE*/
+  .sobre .txt-section {
+    font-size: 1.5em;
+  }
+
+  .sobre .title-section {
+    font-size: 2.25em;
+  }
+
+  .sobre .btn-saiba {
+    width: 200px;
+    height: 60px;
+    font-size: 1.25em;
+  }
+
+  /*DETAQUES*/
+  .projeto .title-section {
+    font-size: 1.5em;
+  }
+  .embalagem .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+
+  /*SAIBA*/
+  .saiba .title-section {
+    font-size: 2.25em;
+  }
+
+  .saiba a {
+    width: 250px;
+    height: 80px;
+    font-size: 1.5em;
+  }
+
+  /*MARCAS*/
+  .sobre-marcas .title-section {
+    font-size: 2.25em;
+  }
+
+  .sobre-marcas .logo-marca {
+    width: 200px;
+  }
+
+  .sobre-marcas .btn-saiba {
+    width: 200px;
+    height: 60px;
+    font-size: 1.25em;
+  }
+
+  /*CONTATO*/
+  .contato {
+    align-items: center;
+  }
+  .contato .title-section {
+    font-size: 2.25em;
+  }
+
+  .contato .txt-section {
+    font-size: 1.25em;
+  }
+
+  /*FORMULÁRIO*/
+  .form {
+    width: 70vw;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .form label .input + span {
+    font-size: 1.25em;
+  }
+
+  .submit {
+    font-size: 1.25em;
+  }
+
+  /*IFRAME*/
+  iframe {
+    width: 450px;
+    height: 450px;
+  }
+
+  /*FOOTER*/
+  footer img {
+    width: 250px;
+  }
+
+  footer .title-section {
+    font-size: 2em;
+  }
+
+  footer .linha-decorativa {
+    width: 90vw;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+
+  /* BOTÕES ANCORAS */
+  .button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .svgIcon {
+    width: 20px;
+  }
+
+  .svgWhatsapp {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  /*HOME*/
+  .main-page {
+    background: black;
+    background: url("../Imagens/Frame\ 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
+  .logo img {
+    width: 250px;
+  }
+
+  .txt-titulo {
+    width: 500px;
+    margin: auto;
+    font-size: 2.5em;
+    transform: translateY(-100px);
+  }
+
+  div.txt-animado {
+    font-size: 2.25em;
+    transform: translateY(-100px);
+  }
+
+  .txt {
+    font-size: 1.5em;
+    transform: translateY(-100px);
+  }
+
+  .btn-agenda {
+    width: 350px;
+    height: 80px;
+    font-size: 1.5em;
+    transform: translateY(-50px);
+    margin-bottom: 30px;
+  }
+
+  .btn-agenda:hover {
+    transform: translateY(-65px);
+  }
+
+  .logo-marca {
+    height: 100px;
+    padding-bottom: 10px;
+  }
+
+  /*MENU*/
+  .menu-item {
+    font-size: 2.5em;
+  }
+
+  /*SOBRE*/
+  .sobre img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .sobre .txt-section {
+    margin-top: 40px;
+    font-size: 1.5em;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .sobre .title-section {
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .sobre .btn-saiba {
+    width: 250px;
+    height: 60px;
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+  /*DETAQUES*/
+  .embalagem {
+    margin-bottom: 200px;
+  }
+
+  .projeto .title-section {
+    font-size: 1.75em;
+    margin-bottom: 50px;
+  }
+
+  .embalagem .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*SAIBA*/
+  .saiba picture img {
+    transform: translateX(-49.5vw);
+    height: 800px;
+  }
+
+  .saiba .title-section {
+    font-size: 2.5em;
+    margin-top: 600px;
+  }
+
+  .saiba a {
+    width: 300px;
+    height: 100px;
+    font-size: 1.5em;
+  }
+
+  /*MARCAS*/
+  .sobre-marcas {
+    transform: translateY(200px);
+  }
+  .sobre-marcas .title-section {
+    font-size: 2.25em;
+  }
+
+  .sobre-marcas .logo-marca {
+    width: 250px;
+  }
+
+  .sobre-marcas .btn-saiba {
+    width: 250px;
+    height: 60px;
+    font-size: 1.5em;
+  }
+
+  /*CONTATO*/
+  .contato {
+    transform: translateY(200px);
+    align-items: center;
+  }
+  .contato .title-section {
+    font-size: 2.25em;
+  }
+
+  .contato .txt-section {
+    font-size: 1.25em;
+  }
+
+  /*FORMULÁRIO*/
+  .form {
+    transform: translateY(20px);
+    width: 70vw;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .form label .input + span {
+    font-size: 1.25em;
+  }
+
+  .submit {
+    font-size: 1.25em;
+  }
+
+  /*FOOTER*/
+  .footer {
+    margin-top: 50px;
+    transform: translateY(500px);
+  }
+  
+  footer img {
+    width: 250px;
+  }
+
+  footer .title-section {
+    font-size: 2em;
+  }
+
+  footer .linha-decorativa {
+    width: 90vw;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+
+  /* BOTÕES ANCORAS */
+  .button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .svgIcon {
+    width: 20px;
+  }
+
+  .svgWhatsapp {
+    width: 70px;
+    height: 70px;
+  }
 }

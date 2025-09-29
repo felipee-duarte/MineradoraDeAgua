@@ -455,7 +455,8 @@ div.txt-animado {
     text-align: center;
 }
 
-.saiba img {
+.saiba picture img  {
+    transform: translateX(-215px);
     width: 100%;
     object-fit: cover;
     position: absolute;

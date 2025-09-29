@@ -324,12 +324,17 @@ div.txt-animado {
     margin-bottom: 20px;
 }
 
-.sobre img {
+.fonte {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre .fonte img {
     border-radius: 0 20px;
     margin-bottom: 30px
 }
 
-.sobre p {
+.sobre .fonte p {
     text-align: justify;
 }
 
@@ -455,8 +460,7 @@ div.txt-animado {
     text-align: center;
 }
 
-.saiba picture img  {
-    transform: translateX(-215px);
+.saiba img  {
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -502,6 +506,21 @@ div.txt-animado {
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+}
+
+.marcas {
+  display: flex;
+  flex-direction: column;
+}
+
+.marcas .pure {
+  display: flex;
+  flex-direction: column;
+}
+
+.marcas .crystal {
+  display: flex;
+  flex-direction: column;
 }
 
 .sobre-marcas .title-section {
@@ -561,6 +580,7 @@ div.txt-animado {
 
 /*FORMULÁRIO*/
 .form {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -705,11 +725,6 @@ div.txt-animado {
   }
 }
 
- /*IFRAME*/
-.contato iframe {
-  margin: 40px 0;
-}
-
 /*FOOTER*/
 footer {
  display: flex;
@@ -745,8 +760,30 @@ footer p {
 }
 
 iframe {
-align-self: center;
+  
+  margin: 40px;
 }
+
+
+.iframe {
+  margin-top: 200px;
+}
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 70%; /* opcional, limita tamanho */
+  margin: auto;   /* centraliza */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px; /* altura ajustável */
+  display: block;
+  border: none;
+}
+
 
 /* BOTÕES ANCORAS */
 .button {

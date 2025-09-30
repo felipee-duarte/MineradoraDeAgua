@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const largura = window.innerWidth;
 
       if (largura >= 1200) {
-        img.src = "imagens/fundo-g.png";
+        img.src = "Imagens/fundo-g.png";
       } else if (largura >= 768) {
-        img.src = "imagens/fundo-g.png";
+        img.src = "Imagens/fundo-g.png";
       } else {
-        img.src = "imagens/img-saiba.png";
+        img.src = "Imagens/img-saiba.png";
       }
     }
 

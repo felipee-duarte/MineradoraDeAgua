@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (largura >= 1200) {
         img.src = "Imagens/fundo-g.png";
       } else if (largura >= 768) {
-        img.src = "Imagens/fundo-g.png";
+        img.src = "Imagens/fundo-m.png";
       } else {
         img.src = "Imagens/img-saiba.png";
       }

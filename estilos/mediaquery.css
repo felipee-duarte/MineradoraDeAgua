@@ -416,7 +416,7 @@
 
   /*SAIBA*/
   .saiba {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .fonte {
@@ -445,6 +445,7 @@
   /*MARCAS*/
   .marcas {
     width: 60%;
+    margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

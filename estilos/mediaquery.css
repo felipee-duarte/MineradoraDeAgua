@@ -162,6 +162,10 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   /*HOME*/
+  .main-page {
+    height: 100%;
+  }
+
   .logo img {
     width: 250px;
   }
@@ -314,6 +318,9 @@
 @media screen and (min-width: 1200px) {
   /*HOME*/
   .main-page {
+    
+    height: 100%;
+  
     background: black;
     background: url("../Imagens/Frame\ 1.png");
     background-size: cover;

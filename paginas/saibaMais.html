@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Saiba+ Mineradora Paulista</title>
     <style>
       * {
         margin: 0;
@@ -19,18 +19,29 @@
       main section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin: 40px 20px;
+        margin: 40px 40px;
       }
 
       .cima {
           display: flex;
-          flex-direction: column;
+          flex-direction: column-reverse;
+        }
+
+        .cima p {
+          margin-bottom: 20px;
         }
 
         .meio {
           display: flex;
           flex-direction: column;
+        }
+
+        .meio img {
+          display: flex;
+          justify-content: center;
+          margin: auto;
         }
 
         .final {
@@ -166,24 +177,42 @@
       @media screen and (min-width: 1200px) {
         .cima {
           display: flex;
+          justify-content: center;
           align-items: center;
           flex-direction: row;
+        }
+
+        .cima img {
+          width: 30%;
+          margin-left: 40px;
         }
 
         .meio {
           display: flex;
+          justify-content: center;
           align-items: center;
           flex-direction: row;
+        }
+
+         .meio img {
+          width: 30%;
+          margin-right: 40px;
         }
 
         .final {
           display: flex;
+          justify-content: center;
           align-items: center;
           flex-direction: row;
         }
 
+         .final img {
+          width: 30%;
+          margin-left: 40px;
+        }
+
         section h2 {
-          font-size: 2em;
+          font-size: 2.5em;
           margin-bottom: 40px;
         }
 
@@ -194,8 +223,12 @@
           justify-content: center;
         }
 
-        section img {
-          width: 40%;
+        section a {
+         
+          width: 300px;
+          height: auto;
+          font-size: 2em;
+          margin: auto;
         }
       }
     </style>
@@ -214,14 +247,14 @@
             contribuem para a saúde no dia a dia.
           </p>
           <img
-            src="../Imagens/lado-fonte.png"
+            src="../Imagens/saiba01.png"
             class="fonte"
             id="fade-in"
             alt="Imagem de uma fonte"
           />
         </div>
         <div class="meio">
-          <img src="../Imagens/frente 2.png" alt="" id="fade-fonte" />
+          <img src="../Imagens/saiba02.png" alt="" id="fade-fonte" />
           <div class="card">
             <p class="txt-card">
               Além de prezarmos pela responsabilidade ambiental em todo o processo
@@ -240,13 +273,13 @@
             fonte, direto para sua casa ou negócio.
           </p>
           <img
-            src="../Imagens/tonel-agua 1.png"
+            src="../Imagens/saiba03.png"
             class="fonte"
             id="fade-tonel"
             alt="imagem de um tonel de água"
           />
         </div>
-        <a href="../index.html" target="_blank">Voltar</a>
+        <a href="../index.html" target="_self">Voltar</a>
       </section>
     </main>
   </body>

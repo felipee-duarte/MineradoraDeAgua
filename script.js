@@ -97,4 +97,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    function trocarImagem() {
+      const img = document.getElementById("minhaImagem");
+      const largura = window.innerWidth;
+
+      if (largura >= 1200) {
+        img.src = "imagens/fundo-g.png";
+      } else if (largura >= 768) {
+        img.src = "imagens/fundo-g.png";
+      } else {
+        img.src = "imagens/img-saiba.png";
+      }
+    }
+
+    trocarImagem(); // roda ao abrir a página
+    window.addEventListener("resize", trocarImagem); // roda se redimensionar
+  });
+
+
+
+
 

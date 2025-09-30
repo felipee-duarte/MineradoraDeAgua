@@ -61,6 +61,8 @@
 
       .saiba img {
         width: 100%;
+        height: 500px;
+        background-position: bottom;
         margin-top: 100px;
         object-fit: cover;
         position: absolute;
@@ -75,7 +77,7 @@
       }
 
       .saiba a {
-        background: #00BBFF;
+        background: #D62828;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -94,16 +96,54 @@
       }
 
       .saiba a:hover {
-        background: #D62828;
+        background: #c80101;
         transform: translateY(-5px);
         box-shadow: 0 0 15px #ff0000;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+      }
+
+      @media screen and (min-width: 1200px) {
+        main > section > .title {
+          font-size: 3em;
+          width: 60%;
+        }
+
+        section .title span {
+          font-size: 2em;
+        }
+
+        main > section > img {
+          width: 30%;
+        }
+
+        main > section > p {
+          font-size: 1.75em;
+          margin: 40px;
+        }
+
+        .saiba > .title-section {
+          font-size: 2em;
+          
+        }
+
+        .saiba > .title-section a {
+          width: 300px;
+          height: 80px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
       <section>
-        <h1>Conheça um pouco mais a <span>CRYSTAL</span></h1>
+        <h1 class="title">Conheça um pouco mais a <span>CRYSTAL</span></h1>
         <img
           src="../Imagens/Gemini_Generated_Image_gx4swagx4swagx4s-removebg-preview.png"
           alt="logo purevalle"
@@ -127,7 +167,7 @@
       </section>
 
       <section class="saiba">
-        <img src="../Imagens/saiba-img.png" alt="" />
+        <img src="../Imagens/fundo-g.png" alt="" />
         <h2 class="title-section">FALE COM UM DE NOSSOS VENDEDORES</h2>
         <a href="../#form">AGENDE UMA CARGA</a>
       </section>

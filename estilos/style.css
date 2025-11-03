@@ -800,6 +800,10 @@ footer p {
   z-index: 999;
 }
 
+a {
+  text-decoration: none;
+}
+
 .svgIcon {
   width: 12px;
   transition-duration: 0.3s;
@@ -840,11 +844,14 @@ footer p {
   transition-duration: 0.3s;
 }
 
-.svgWhatsapp {
-  width: 30px;
-  height: 30px;
-  fill: white;
-  display: block;
+.button i {
+  font-size: 35px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.button:hover i {
+  transform: translateY(-200%);
 }
 
 .button.whatsapp:hover .svgWhatsapp {

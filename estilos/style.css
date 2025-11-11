@@ -36,9 +36,9 @@ body {
 }
 
 .logo img {
-    margin: 30px 20px;
-
-    width: 150px; /* Ajuste o tamanho do logo conforme necessário */
+    margin: 20px 20px;
+    filter: drop-shadow(0 0 5px #ffffff);
+    width: 300px; 
 }
 
 .hero-section {
